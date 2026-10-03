@@ -1,0 +1,374 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" className="jn-official-logo" width="100%" height="100%">
+  <defs>
+    <!-- Rich Background Radial Gradient -->
+    <radialGradient id="maroonVelvet" cx="50%" cy="44%" r="56%">
+      <stop offset="0%" stop-color="#580E18" />
+      <stop offset="40%" stop-color="#3E070F" />
+      <stop offset="75%" stop-color="#280309" />
+      <stop offset="100%" stop-color="#180105" />
+    </radialGradient>
+
+    <!-- Metallic Gold Gradients with Specular Highlights -->
+    <linearGradient id="goldMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF6CE" />
+      <stop offset="20%" stop-color="#F7D779" />
+      <stop offset="45%" stop-color="#DCA233" />
+      <stop offset="70%" stop-color="#FFF1B8" />
+      <stop offset="85%" stop-color="#B67F21" />
+      <stop offset="100%" stop-color="#784E0F" />
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A36F1C" />
+      <stop offset="30%" stop-color="#E5B548" />
+      <stop offset="60%" stop-color="#FFF6D4" />
+      <stop offset="80%" stop-color="#E2AF3C" />
+      <stop offset="100%" stop-color="#8A5612" />
+    </linearGradient>
+
+    <linearGradient id="goldBevelLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#FFEAA6" />
+      <stop offset="75%" stop-color="#D49B2A" />
+      <stop offset="100%" stop-color="#704509" />
+    </linearGradient>
+
+    <linearGradient id="goldDarkShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5E3806" />
+      <stop offset="50%" stop-color="#3D2202" />
+      <stop offset="100%" stop-color="#261501" />
+    </linearGradient>
+
+    <!-- Divine Lotus Petals Gradient -->
+    <linearGradient id="pinkLotus" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA7C0" />
+      <stop offset="45%" stop-color="#F4628B" />
+      <stop offset="85%" stop-color="#C82352" />
+      <stop offset="100%" stop-color="#8A0F31" />
+    </linearGradient>
+
+    <!-- Garland Multicolor Gradient -->
+    <linearGradient id="garlandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF" />
+      <stop offset="25%" stop-color="#E53E3E" />
+      <stop offset="50%" stop-color="#F6E05E" />
+      <stop offset="75%" stop-color="#38A169" />
+      <stop offset="100%" stop-color="#E53E3E" />
+    </linearGradient>
+
+    <!-- Filters for Depth and Realism -->
+    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <filter id="goldShine" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#FFF6CE" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- 1. BASE BACKGROUND & OUTER EMBELLISHMENTS -->
+  <!-- Outer Ornate Filigree Flourishes (Temple & Baroque Gold Carvings) -->
+  <g filter="url(#dropGlow)">
+    <!-- Top Gopuram / Crown Kalasam -->
+    <path d="M400 32 L412 58 C424 62 434 72 430 84 C426 95 414 100 400 102 C386 100 374 95 370 84 C366 72 376 62 388 58 Z" fill="url(#goldMain)" />
+    <path d="M400 24 L404 32 L396 32 Z" fill="#FFF6CE" />
+    <circle cx="400" cy="20" r="5" fill="url(#goldLight)" />
+    <circle cx="400" cy="12" r="2.5" fill="#FFF" />
+
+    <!-- Top Left Filigree Swirls -->
+    <path d="M385 64 C350 45 310 52 280 72 C255 88 240 115 242 142 C244 158 256 168 270 162 C282 156 286 142 278 132 C268 118 280 96 304 88 C330 80 358 84 380 98 Z" fill="url(#goldMain)" />
+    <!-- Top Right Filigree Swirls -->
+    <path d="M415 64 C450 45 490 52 520 72 C545 88 560 115 558 142 C556 158 544 168 530 162 C518 156 514 142 522 132 C532 118 520 96 496 88 C470 80 442 84 420 98 Z" fill="url(#goldMain)" />
+
+    <!-- Left Flank Baroque Filigree Wings -->
+    <path d="M92 360 C68 318 64 260 98 220 C114 200 138 206 138 226 C138 242 124 256 116 274 C104 300 110 334 130 356 C144 372 134 394 116 388 C102 382 94 372 92 360 Z" fill="url(#goldMain)" />
+    <path d="M88 400 C60 440 68 505 110 545 C132 566 156 556 154 536 C152 516 134 502 126 480 C114 446 126 414 146 394 C158 380 144 362 126 366 C106 372 94 384 88 400 Z" fill="url(#goldMain)" />
+
+    <!-- Right Flank Baroque Filigree Wings -->
+    <path d="M708 360 C732 318 736 260 702 220 C686 200 662 206 662 226 C662 242 676 256 684 274 C696 300 690 334 670 356 C656 372 666 394 684 388 C698 382 706 372 708 360 Z" fill="url(#goldMain)" />
+    <path d="M712 400 C740 440 732 505 690 545 C668 566 644 556 646 536 C648 516 666 502 674 480 C686 446 674 414 654 394 C642 380 656 362 674 366 C694 372 706 384 712 400 Z" fill="url(#goldMain)" />
+
+    <!-- Bottom Ornate Scroll & Lotus Finial -->
+    <path d="M400 742 C382 718 360 706 332 708 C310 710 298 726 312 740 C328 756 358 752 384 766 C394 772 406 772 416 766 C442 752 472 756 488 740 C502 726 490 710 468 708 C440 706 418 718 400 742 Z" fill="url(#goldMain)" />
+    <circle cx="400" cy="756" r="6" fill="#FFF6CE" />
+    <circle cx="400" cy="770" r="3" fill="url(#goldLight)" />
+  </g>
+
+  <!-- 2. MAIN OVAL MEDALLION & FRAMING RINGS -->
+  <g filter="url(#dropGlow)">
+    <!-- Outer Sculpted Gold Rim -->
+    <ellipse cx="400" cy="408" rx="338" ry="358" fill="none" stroke="url(#goldMain)" stroke-width="14" />
+    <!-- Beaded Inner Gold Ring -->
+    <ellipse cx="400" cy="408" rx="324" ry="344" fill="none" stroke="url(#goldLight)" stroke-width="3" stroke-dasharray="6 6" />
+    <!-- Sharp Gold Highlight Ring -->
+    <ellipse cx="400" cy="408" rx="318" ry="338" fill="none" stroke="#FFEAA6" stroke-width="2" />
+    <!-- Deep Maroon Velvet Canvas -->
+    <ellipse cx="400" cy="408" rx="315" ry="335" fill="url(#maroonVelvet)" />
+    <!-- Inner Accent Glow Ring -->
+    <ellipse cx="400" cy="408" rx="305" ry="325" fill="none" stroke="url(#goldDarkShadow)" stroke-width="4" opacity="0.7" />
+    <ellipse cx="400" cy="408" rx="302" ry="322" fill="none" stroke="url(#goldLight)" stroke-width="1.5" opacity="0.5" />
+  </g>
+
+  <!-- 3. TEMPLE ARCH (PRABHAVALI) & SACRED DEITIES -->
+  <!-- Golden Prabhavali Temple Pillars & Carved Arch -->
+  <g filter="url(#softGlow)">
+    <!-- Left Fluted Pillar -->
+    <rect x="234" y="190" width="22" height="160" rx="3" fill="url(#goldMain)" />
+    <rect x="228" y="340" width="34" height="18" rx="2" fill="url(#goldLight)" />
+    <rect x="224" y="354" width="42" height="12" rx="2" fill="url(#goldMain)" />
+    <rect x="226" y="178" width="38" height="14" rx="2" fill="url(#goldLight)" />
+    <path d="M234 190 L240 340 M245 190 L245 340 M250 190 L250 340" stroke="#784E0F" stroke-width="1" opacity="0.5" />
+
+    <!-- Right Fluted Pillar -->
+    <rect x="544" y="190" width="22" height="160" rx="3" fill="url(#goldMain)" />
+    <rect x="538" y="340" width="34" height="18" rx="2" fill="url(#goldLight)" />
+    <rect x="534" y="354" width="42" height="12" rx="2" fill="url(#goldMain)" />
+    <rect x="536" y="178" width="38" height="14" rx="2" fill="url(#goldLight)" />
+    <path d="M544 190 L550 340 M555 190 L555 340 M560 190 L560 340" stroke="#784E0F" stroke-width="1" opacity="0.5" />
+
+    <!-- Grand Archway Torana -->
+    <path d="M240 180 C240 90 310 76 400 76 C490 76 560 90 560 180" fill="none" stroke="url(#goldMain)" stroke-width="16" stroke-linecap="round" />
+    <path d="M248 180 C248 104 316 92 400 92 C484 92 552 104 552 180" fill="none" stroke="#FFEAA6" stroke-width="3" />
+    <!-- Arch Flame & Floral Crest Ornaments -->
+    <circle cx="400" cy="74" r="10" fill="url(#goldLight)" />
+    <circle cx="400" cy="62" r="5" fill="#FFF6CE" />
+    <circle cx="350" cy="86" r="6" fill="url(#goldMain)" />
+    <circle cx="450" cy="86" r="6" fill="url(#goldMain)" />
+    <circle cx="306" cy="112" r="5" fill="url(#goldMain)" />
+    <circle cx="494" cy="112" r="5" fill="url(#goldMain)" />
+  </g>
+
+  <!-- Hanging Deepams / Traditional Temple Lamps (Kuthuvilakku) -->
+  <g filter="url(#softGlow)">
+    <!-- Left Hanging Lamp -->
+    <line x1="195" y1="150" x2="195" y2="270" stroke="url(#goldLight)" stroke-width="2.5" stroke-dasharray="4 2" />
+    <path d="M183 270 C183 286 207 286 207 270 Z" fill="url(#goldMain)" />
+    <ellipse cx="195" cy="270" rx="14" ry="4" fill="url(#goldLight)" />
+    <!-- Glowing Flame -->
+    <path d="M195 252 C198 260 200 264 195 268 C190 264 192 260 195 252 Z" fill="#FFB300" filter="url(#goldShine)" />
+    <circle cx="195" cy="264" r="2.5" fill="#FFF" />
+
+    <!-- Right Hanging Lamp -->
+    <line x1="605" y1="150" x2="605" y2="270" stroke="url(#goldLight)" stroke-width="2.5" stroke-dasharray="4 2" />
+    <path d="M593 270 C593 286 617 286 617 270 Z" fill="url(#goldMain)" />
+    <ellipse cx="605" cy="270" rx="14" ry="4" fill="url(#goldLight)" />
+    <!-- Glowing Flame -->
+    <path d="M605 252 C608 260 610 264 605 268 C600 264 602 260 605 252 Z" fill="#FFB300" filter="url(#goldShine)" />
+    <circle cx="605" cy="264" r="2.5" fill="#FFF" />
+  </g>
+
+  <!-- DEITY 1 (LEFT): LORD VENKATESWARA (BALAJI / SRINIVASA) -->
+  <g id="lord-venkateswara" transform="translate(262, 104)">
+    <!-- Tall Sacred Kireetam (Crown) with Diamonds & Gold -->
+    <path d="M48 66 L88 66 L84 20 L76 6 L60 6 L52 20 Z" fill="url(#goldMain)" filter="url(#softGlow)" />
+    <!-- Crown Ornaments & Gem Bands -->
+    <rect x="52" y="38" width="32" height="6" rx="2" fill="#FFEAA6" />
+    <rect x="50" y="52" width="36" height="7" rx="2" fill="url(#goldLight)" />
+    <circle cx="68" cy="14" r="4" fill="#FFF" />
+    <circle cx="68" cy="6" r="2.5" fill="#FFD700" />
+    <!-- Kalabham & Pearls on Crown Side -->
+    <circle cx="48" cy="66" r="3" fill="#FFEAA6" />
+    <circle cx="88" cy="66" r="3" fill="#FFEAA6" />
+
+    <!-- Divine Face (Shyamala Sacred Black/Dark Stone) -->
+    <path d="M50 66 Q68 90 86 66 Z" fill="#171920" />
+    <!-- Divine Cheeks & Ears -->
+    <circle cx="48" cy="74" r="5" fill="url(#goldMain)" /> <!-- Golden Makara Kundala Earring -->
+    <circle cx="88" cy="74" r="5" fill="url(#goldMain)" />
+
+    <!-- SACRED THIRUMANN / NAMAM (Urdhva Pundra) -->
+    <!-- Brilliant Pure White "V" -->
+    <path d="M59 66 L62 82 L74 82 L77 66 L73 66 L70 77 L66 77 L63 66 Z" fill="#FFFFFF" filter="url(#goldShine)" />
+    <!-- Red Kasturi Thilakam in Center -->
+    <rect x="66.8" y="67" width="2.4" height="12" rx="1.2" fill="#E53E3E" />
+
+    <!-- Upper Hands: Holy Shanku & Chakra -->
+    <!-- Chakra (Discus) on Left Upper Hand -->
+    <circle cx="34" cy="96" r="9" fill="url(#goldMain)" />
+    <circle cx="34" cy="96" r="5" fill="#FFF6CE" stroke="#C53030" stroke-width="1.5" />
+    <path d="M34 83 L34 109 M21 96 L47 96" stroke="url(#goldLight)" stroke-width="1.5" />
+    <!-- Shanku (Conch) on Right Upper Hand -->
+    <ellipse cx="102" cy="96" rx="8" ry="10" fill="url(#goldMain)" />
+    <ellipse cx="102" cy="96" rx="5" ry="7" fill="#FFFFFF" stroke="url(#goldLight)" stroke-width="1" />
+
+    <!-- Golden Vajra Kavacham (Chest Armor) & Jewel Necklaces -->
+    <path d="M42 90 Q68 106 94 90 L98 155 Q68 172 38 155 Z" fill="url(#goldMain)" />
+    <path d="M48 94 Q68 108 88 94" stroke="#FFEAA6" stroke-width="3" fill="none" />
+    <path d="M45 106 Q68 122 91 106" stroke="#B67F21" stroke-width="2.5" fill="none" />
+    <circle cx="68" cy="124" r="5" fill="#C53030" stroke="#FFEAA6" stroke-width="1.5" /> <!-- Kaustubha Gem -->
+
+    <!-- Vriksha/Tulasi Floral Garland (Vanamala) Draping Shoulders -->
+    <path d="M36 84 Q22 130 36 182 Q52 208 68 210 Q84 208 100 182 Q114 130 100 84 Q108 130 96 176 Q82 198 68 200 Q54 198 40 176 Q28 130 36 84 Z" fill="url(#garlandGrad)" stroke="#784E0F" stroke-width="1" />
+
+    <!-- Golden Pitambaram Dhoti & Girdle -->
+    <path d="M40 155 L96 155 L92 215 L44 215 Z" fill="url(#goldLight)" />
+    <rect x="44" y="155" width="48" height="6" fill="#FFEAA6" />
+  </g>
+
+  <!-- DEITY 2 (RIGHT): GODDESS MAHALAKSHMI (PADMAVATHI DEVI) -->
+  <g id="goddess-lakshmi" transform="translate(406, 122)">
+    <!-- Golden Mukutam (Crown) -->
+    <path d="M56 56 L86 56 L82 22 L76 10 L66 10 L60 22 Z" fill="url(#goldMain)" filter="url(#softGlow)" />
+    <circle cx="71" cy="8" r="3" fill="#FFF6CE" />
+    <rect x="58" y="38" width="26" height="5" rx="2" fill="#FFEAA6" />
+
+    <!-- Serene Radiant Face -->
+    <ellipse cx="71" cy="68" rx="14" ry="14" fill="#FBD38D" />
+    <!-- Auspicious Vermilion Bindi & Eyes -->
+    <circle cx="71" cy="64" r="2.5" fill="#C53030" />
+    <ellipse cx="65" cy="67" rx="2" ry="1.2" fill="#1A202C" />
+    <ellipse cx="77" cy="67" rx="2" ry="1.2" fill="#1A202C" />
+    <path d="M68 73 Q71 76 74 73" stroke="#C53030" stroke-width="1.2" fill="none" />
+
+    <!-- Golden Jhumka Earrings -->
+    <circle cx="54" cy="70" r="4" fill="url(#goldMain)" />
+    <circle cx="88" cy="70" r="4" fill="url(#goldMain)" />
+
+    <!-- Royal Crimson Red Saree & Golden Zari -->
+    <path d="M52 84 Q71 90 90 84 L96 142 Q71 148 46 142 Z" fill="#9B1C28" />
+    <path d="M50 86 Q71 102 92 86" stroke="url(#goldMain)" stroke-width="3.5" fill="none" />
+    <path d="M48 100 Q71 116 94 100" stroke="url(#goldLight)" stroke-width="2" fill="none" />
+    <circle cx="71" cy="108" r="4" fill="#E53E3E" stroke="#FFEAA6" stroke-width="1.5" />
+
+    <!-- Upper Hands Holding Radiant Pink Lotuses -->
+    <!-- Left Lotus -->
+    <path d="M38 78 C30 68 34 54 44 54 C54 54 58 68 50 78 Z" fill="url(#pinkLotus)" filter="url(#softGlow)" />
+    <circle cx="44" cy="66" r="4" fill="#FFF5F7" />
+    <!-- Right Lotus -->
+    <path d="M104 78 C96 68 100 54 110 54 C120 54 124 68 116 78 Z" fill="url(#pinkLotus)" filter="url(#softGlow)" />
+    <circle cx="110" cy="66" r="4" fill="#FFF5F7" />
+
+    <!-- Lower Right Hand: Abhaya Mudra Blessing -->
+    <circle cx="46" cy="124" r="6" fill="#FBD38D" />
+    <path d="M46 118 L46 128" stroke="#C53030" stroke-width="1" />
+    <!-- Lower Left Hand: Golden Kalasam (Vessel of Wealth & Abundance) -->
+    <ellipse cx="94" cy="124" rx="10" ry="8" fill="url(#goldMain)" />
+    <path d="M88 124 L100 124 L98 134 L90 134 Z" fill="url(#goldLight)" />
+    <circle cx="94" cy="118" r="3" fill="#FFEAA6" />
+
+    <!-- Seated Padmasana Posture & Silk Saree Fold -->
+    <path d="M34 140 Q71 134 108 140 L112 166 Q71 176 30 166 Z" fill="#82141F" />
+
+    <!-- Grand Pink Lotus Pedestal underneath Goddess Lakshmi -->
+    <g transform="translate(12, 142)" filter="url(#softGlow)">
+      <path d="M60 0 C70 -16 80 -16 90 0 C80 14 70 14 60 0 Z" fill="url(#pinkLotus)" />
+      <path d="M40 4 C52 -10 64 -10 74 4 C62 16 50 16 40 4 Z" fill="url(#pinkLotus)" />
+      <path d="M76 4 C88 -10 100 -10 112 4 C100 16 88 16 76 4 Z" fill="url(#pinkLotus)" />
+      <path d="M22 14 C36 2 48 2 58 16 C44 26 32 24 22 14 Z" fill="url(#pinkLotus)" />
+      <path d="M92 16 C102 2 114 2 128 14 C118 24 106 26 92 16 Z" fill="url(#pinkLotus)" />
+    </g>
+  </g>
+
+  <!-- 4. CENTRAL 3D SCULPTED GOLD "JN" MONOGRAM -->
+  <g id="jn-monogram" filter="url(#dropGlow)">
+    <!-- 3D Shadow Layer Behind Monogram for Deep Relief -->
+    <g fill="#3D2202" transform="translate(4, 6)">
+      <!-- Shadow of J -->
+      <path d="M310 320 L370 320 L370 340 L350 340 L350 480 C350 538 316 564 256 550 C234 544 218 530 206 510 C220 502 238 500 254 508 C268 515 284 512 290 488 L290 340 L270 340 L270 320 Z" />
+      <!-- Shadow of N -->
+      <path d="M354 332 L534 522 L548 522 L548 320 L608 320 L608 340 L588 340 L588 522 L606 522 L606 542 L526 542 L384 384 L384 522 L404 522 L404 542 L338 542 L338 522 L354 522 Z" />
+    </g>
+
+    <!-- Mid-Tone Chiseled Gold Base -->
+    <g fill="url(#goldDarkShadow)">
+      <path d="M308 318 L368 318 L368 338 L348 338 L348 478 C348 534 314 560 256 546 C234 540 218 526 206 508 C220 500 238 498 254 506 C268 513 284 510 290 486 L290 338 L270 338 L270 318 Z" />
+      <path d="M352 330 L532 520 L546 520 L546 318 L606 318 L606 338 L586 338 L586 520 L604 520 L604 540 L524 540 L382 382 L382 520 L402 520 L402 540 L336 540 L336 520 L352 520 Z" />
+    </g>
+
+    <!-- Primary Front Face of "J" with Magnificent Sweeping Serifs -->
+    <path d="M306 314 L366 314 L366 334 L346 334 L346 476 C346 530 314 556 256 542 C234 536 218 522 206 504 C220 496 238 494 254 502 C268 509 284 506 290 482 L290 334 L270 334 L270 314 Z" fill="url(#goldMain)" />
+
+    <!-- Specular Highlight Ridge on "J" -->
+    <path d="M346 334 L354 334 L354 476 C354 504 340 522 320 534 C336 522 346 502 346 476 Z" fill="#FFFBE6" opacity="0.75" />
+    <path d="M270 314 L366 314 L366 320 L270 320 Z" fill="#FFFFFF" opacity="0.8" />
+
+    <!-- Ornate 4-Point Faceted Diamond Star on J -->
+    <g transform="translate(366, 480)" filter="url(#goldShine)">
+      <polygon points="0,-12 3.5,-3.5 12,0 3.5,3.5 0,12 -3.5,3.5 -12,0 -3.5,-3.5" fill="#FFFFFF" />
+      <polygon points="0,-8 2.5,-2.5 8,0 2.5,2.5 0,8 -2.5,2.5 -8,0 -2.5,-2.5" fill="#FFEAA6" />
+      <circle cx="0" cy="0" r="2" fill="#FFFFFF" />
+    </g>
+
+    <!-- Primary Front Face of "N" with Powerful Intertwining Diagonal -->
+    <path d="M350 326 L530 516 L544 516 L544 314 L604 314 L604 334 L584 334 L584 516 L602 516 L602 536 L522 536 L380 378 L380 516 L400 516 L400 536 L334 536 L334 516 L350 516 Z" fill="url(#goldLight)" />
+
+    <!-- Specular Highlights on "N" Diagonal & Right Stem -->
+    <path d="M350 326 L356 326 L536 516 L530 516 Z" fill="#FFFFFF" opacity="0.85" />
+    <path d="M584 334 L592 334 L592 516 L584 516 Z" fill="#FFFBE6" opacity="0.8" />
+    <path d="M544 314 L604 314 L604 320 L544 320 Z" fill="#FFFFFF" opacity="0.8" />
+  </g>
+
+  <!-- Golden 9-Petal Lotus Bloom Underneath JN Monogram -->
+  <g id="monogram-lotus-crest" fill="url(#goldMain)" filter="url(#softGlow)">
+    <!-- Central Lotus Petal -->
+    <path d="M400 522 C410 536 416 556 400 572 C384 556 390 536 400 522 Z" />
+    <!-- Flanking Inner Petals -->
+    <path d="M378 530 C392 542 392 562 370 572 C362 556 368 538 378 530 Z" />
+    <path d="M422 530 C408 542 408 562 430 572 C438 556 432 538 422 530 Z" />
+    <!-- Flanking Outer Petals -->
+    <path d="M354 544 C370 550 368 570 344 576 C338 560 344 548 354 544 Z" />
+    <path d="M446 544 C430 550 432 570 456 576 C462 560 456 548 446 544 Z" />
+    <!-- Far Wing Petals -->
+    <path d="M330 560 C348 564 346 580 322 584 C318 570 322 562 330 560 Z" />
+    <path d="M470 560 C452 564 454 580 478 584 C482 570 478 562 470 560 Z" />
+    <circle cx="400" cy="564" r="4.5" fill="#FFEAA6" />
+  </g>
+
+  <!-- 5. PRIMARY TYPOGRAPHY: "JAYA NARAYANA" -->
+  <g id="brand-title" filter="url(#dropGlow)">
+    <!-- Background bevel shadow for title text -->
+    <text x="402" y="636" text-anchor="middle"
+          font-family="'Cinzel', 'Playfair Display', 'Cormorant Garamond', 'Georgia', serif"
+          font-size="56"
+          font-weight="900"
+          letter-spacing="6"
+          fill="#2A1402">
+      JAYA NARAYANA
+    </text>
+    <!-- Foreground High-Contrast Metallic Gold Lettering -->
+    <text x="400" y="634" text-anchor="middle"
+          font-family="'Cinzel', 'Playfair Display', 'Cormorant Garamond', 'Georgia', serif"
+          font-size="56"
+          font-weight="900"
+          letter-spacing="6"
+          fill="url(#goldBevelLight)">
+      JAYA NARAYANA
+    </text>
+  </g>
+
+  <!-- 6. SECONDARY LINE: "—— FUNCTION HALL ——" -->
+  <g id="brand-subtitle" filter="url(#softGlow)">
+    <!-- Left Ornate Arrowhead & Rule -->
+    <path d="M174 674 L276 674" stroke="url(#goldMain)" stroke-width="3" stroke-linecap="round" />
+    <polygon points="174,674 186,669 184,674 186,679" fill="url(#goldMain)" />
+    <circle cx="276" cy="674" r="3" fill="#FFEAA6" />
+
+    <!-- "FUNCTION HALL" Text with Clean Dignified Spacing -->
+    <text x="400" y="681" text-anchor="middle"
+          font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+          font-size="25"
+          font-weight="800"
+          letter-spacing="12"
+          fill="#FFEFA6">
+      FUNCTION HALL
+    </text>
+
+    <!-- Right Ornate Arrowhead & Rule -->
+    <path d="M626 674 L524 674" stroke="url(#goldMain)" stroke-width="3" stroke-linecap="round" />
+    <polygon points="626,674 614,669 616,674 614,679" fill="url(#goldMain)" />
+    <circle cx="524" cy="674" r="3" fill="#FFEAA6" />
+  </g>
+
+  <!-- 7. BOTTOM SACRED FLORAL FINIAL -->
+  <g id="bottom-finial" fill="url(#goldMain)" filter="url(#softGlow)">
+    <circle cx="400" cy="714" r="4" fill="#FFF6CE" />
+    <path d="M400 704 C406 714 412 728 400 738 C388 728 394 714 400 704 Z" />
+    <path d="M384 712 C394 716 394 730 378 738 C372 728 376 718 384 712 Z" />
+    <path d="M416 712 C406 716 406 730 422 738 C428 728 424 718 416 712 Z" />
+    <path d="M364 724 Q388 732 400 724 Q412 732 436 724" stroke="url(#goldLight)" stroke-width="2" fill="none" />
+  </g>
+</svg>

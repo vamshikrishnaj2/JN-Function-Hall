@@ -1,0 +1,6 @@
+# robots.txt for JN Function Hall — Jaya Narayana
+User-agent: *
+Allow: /
+
+# XML Sitemap
+Sitemap: https://ais-pre-j6fm4q66twjwqs2p4lfk4f-190513320017.asia-southeast1.run.app/sitemap.xml

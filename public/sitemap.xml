@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://ais-pre-j6fm4q66twjwqs2p4lfk4f-190513320017.asia-southeast1.run.app/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ais-pre-j6fm4q66twjwqs2p4lfk4f-190513320017.asia-southeast1.run.app/image.png</image:loc>
+      <image:title>JN Function Hall Official Emblem and Brand Identity</image:title>
+      <image:caption>Official brand logo of JN Function Hall — Jaya Narayana</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ais-pre-j6fm4q66twjwqs2p4lfk4f-190513320017.asia-southeast1.run.app/jn-video-poster.jpg</image:loc>
+      <image:title>JN Function Hall Celebration Stage and Interior Hall</image:title>
+      <image:caption>Authentic interior walkthrough view of JN Function Hall event space</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://ais-pre-j6fm4q66twjwqs2p4lfk4f-190513320017.asia-southeast1.run.app/jn-video-poster.jpg</video:thumbnail_loc>
+      <video:title>JN Function Hall Venue Walkthrough Tour</video:title>
+      <video:description>Comprehensive video walkthrough of JN Function Hall (Jaya Narayana), showcasing the celebration auditorium, stage dais, dining hall, and lift facility.</video:description>
+      <video:content_loc>https://ais-pre-j6fm4q66twjwqs2p4lfk4f-190513320017.asia-southeast1.run.app/jn-function-hall-tour.mp4</video:content_loc>
+      <video:player_loc>https://ais-pre-j6fm4q66twjwqs2p4lfk4f-190513320017.asia-southeast1.run.app/#gallery</video:player_loc>
+      <video:duration>25</video:duration>
+      <video:publication_date>2026-10-03T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+</urlset>
