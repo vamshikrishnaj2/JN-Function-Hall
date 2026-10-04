@@ -51,6 +51,15 @@ export const VENUE_CONFIG = {
   headline: "Celebrate Life's Special Moments",
   subheadline: 'JN Function Hall — Jaya Narayana',
   
+  // Verified Venue Core Details
+  hallPrice: '₹30,000',
+  hallPriceNumeric: 30000,
+  timing: '24 Hours',
+  capacity: '250–350 guests',
+  guestCapacityDisplay: '250–350',
+  parking: 'Available',
+  kitchen: 'Available for cooking if required',
+
   // Contact details - Verified Phone Numbers & WhatsApp
   phone1: '+918125988666',
   phone1Display: '+91 81259 88666',
@@ -163,6 +172,14 @@ export const VERIFIED_FACILITIES: FacilityItem[] = [
     statusBadge: 'Confirmed Facility',
   },
   {
+    id: 'kitchen-facility',
+    name: 'Kitchen Facility',
+    category: 'Catering Infrastructure',
+    description: 'Dedicated on-site kitchen facility available for cooking and food preparations if required.',
+    isConfirmed: true,
+    statusBadge: 'Confirmed Facility',
+  },
+  {
     id: 'dining-area',
     name: 'Dining Area & Catering Support',
     category: 'Banquet Space',
@@ -189,31 +206,142 @@ export const VERIFIED_FACILITIES: FacilityItem[] = [
 ];
 
 /**
- * Capacity Section Data
- * Strictly avoiding invented numbers as instructed.
- * Clearly marked placeholders are displayed until verified data is provided.
+ * Verified Venue Highlight Cards
+ * The 5 core verified venue facts requested by management
+ */
+export interface VenueDetailHighlight {
+  id: string;
+  label: string;
+  value: string;
+  subtext: string;
+  tag: string;
+}
+
+export const VENUE_HIGHLIGHT_CARDS: VenueDetailHighlight[] = [
+  {
+    id: 'hall-price',
+    value: '₹30,000',
+    label: 'Hall Price',
+    subtext: 'Transparent hall rental rate for full 24-hour venue hire.',
+    tag: 'Venue Rental',
+  },
+  {
+    id: 'venue-timing',
+    value: '24 Hours',
+    label: 'Venue Timing',
+    subtext: 'Complete 24-hour day & night booking availability for events.',
+    tag: 'Availability',
+  },
+  {
+    id: 'guest-capacity',
+    value: '250–350',
+    label: 'Guest Capacity',
+    subtext: 'Comfortable seating & floating guest accommodations in main hall.',
+    tag: 'Accommodations',
+  },
+  {
+    id: 'parking-facility',
+    value: 'Available',
+    label: 'Parking',
+    subtext: 'Dedicated on-premises vehicle parking for 4-wheelers & 2-wheelers.',
+    tag: 'Convenience',
+  },
+  {
+    id: 'kitchen-facility',
+    value: 'Available',
+    label: 'Kitchen',
+    subtext: 'Dedicated on-site kitchen facility available for cooking if required.',
+    tag: 'Food Preparation',
+  },
+];
+
+/**
+ * Capacity Section Data - Verified Venue Details
  */
 export const CAPACITY_DATA: CapacityItem[] = [
   {
     id: 'hall-capacity',
-    title: 'Hall Capacity',
-    value: '[Capacity to be confirmed]',
-    subtext: 'Main function hall seating and floating capacity. Please contact management for specific guest count suitability.',
-    isPlaceholder: true,
+    title: 'Guest Capacity',
+    value: '250–350 Guests',
+    subtext: 'Main function hall seating and floating guest capacity for weddings, receptions, and gatherings.',
+    isPlaceholder: false,
   },
   {
-    id: 'dining-capacity',
-    title: 'Dining Capacity',
-    value: '[Capacity to be confirmed]',
-    subtext: 'Dining section batch seating and buffet service capacity. Configurable per event arrangement.',
-    isPlaceholder: true,
+    id: 'timing-capacity',
+    title: 'Venue Timing',
+    value: '24 Hours',
+    subtext: '24-hour venue booking duration allowing comprehensive event setup, ceremonies, and celebrations.',
+    isPlaceholder: false,
   },
   {
     id: 'parking-capacity',
-    title: 'Parking Capacity',
-    value: '[Capacity to be confirmed]',
-    subtext: 'Number of 4-wheeler and 2-wheeler vehicle parking spaces available on premises.',
-    isPlaceholder: true,
+    title: 'Parking Facility',
+    value: 'Available on Premises',
+    subtext: 'Designated vehicle parking area providing convenient access for cars and two-wheelers.',
+    isPlaceholder: false,
+  },
+  {
+    id: 'kitchen-capacity',
+    title: 'Kitchen Facility',
+    value: 'Available for Cooking',
+    subtext: 'Kitchen facility is available on-site for food preparation and cooking if required.',
+    isPlaceholder: false,
+  },
+];
+
+/**
+ * Verified Venue Restrictions / Conditions
+ * Strictly based on the verified venue guidelines:
+ * - Alcohol: NOT allowed
+ * - Non-Vegetarian Food: NOT allowed
+ * - DJ: NOT allowed
+ * - Playing Cards / Gambling: NOT allowed
+ * - Band / Live Band: NOT allowed
+ * - Crackers / Fireworks: NOT allowed
+ */
+export interface VenueRestrictionItem {
+  id: string;
+  title: string;
+  status: 'Not Allowed';
+  description: string;
+}
+
+export const VENUE_RESTRICTIONS: VenueRestrictionItem[] = [
+  {
+    id: 'alcohol',
+    title: 'Alcohol',
+    status: 'Not Allowed',
+    description: 'Alcohol is strictly not allowed on the venue premises.',
+  },
+  {
+    id: 'non-veg',
+    title: 'Non-Vegetarian Food',
+    status: 'Not Allowed',
+    description: 'Non-vegetarian food is strictly not allowed. Pure vegetarian venue only.',
+  },
+  {
+    id: 'dj',
+    title: 'DJ',
+    status: 'Not Allowed',
+    description: 'DJ sound systems and loud DJ setups are strictly not allowed.',
+  },
+  {
+    id: 'playing-cards',
+    title: 'Playing Cards',
+    status: 'Not Allowed',
+    description: 'Playing cards and gambling activities are strictly not allowed.',
+  },
+  {
+    id: 'band',
+    title: 'Band',
+    status: 'Not Allowed',
+    description: 'Live loud musical bands or brass bands are strictly not allowed.',
+  },
+  {
+    id: 'crackers',
+    title: 'Crackers',
+    status: 'Not Allowed',
+    description: 'Crackers and fireworks are strictly not allowed on the premises.',
   },
 ];
 

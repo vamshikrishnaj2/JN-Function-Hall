@@ -39,26 +39,30 @@ export const HeroSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Honest, Professional Description without unverified claims */}
+            {/* Honest, Professional Description with verified venue specifications */}
             <p className="text-base sm:text-lg text-[#52525b] leading-relaxed max-w-2xl mx-auto lg:mx-0">
               A dedicated venue designed for life’s most cherished celebrations and gatherings.
-              Providing an indoor function hall, dedicated dining area, and on-premises parking
-              with attentive management for smooth event coordination.
+              Available at <strong>₹30,000</strong> for complete <strong>24-hour venue hire</strong>, accommodating
+              {' '}<strong>250–350 guests</strong> with dedicated cooking kitchen and on-premises parking.
             </p>
 
             {/* Core Verified Venue Pillars */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm text-[#374151] max-w-xl mx-auto lg:mx-0">
-              <div className="flex items-center gap-2 bg-white/80 border border-[#e8dfd1] rounded-lg px-3 py-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#9e6f2c] shrink-0" />
-                <span className="font-semibold text-[#141b25]">Function Hall</span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2 text-xs text-[#374151] max-w-xl mx-auto lg:mx-0">
+              <div className="flex items-center gap-2 bg-white/80 border border-[#e8dfd1] rounded-lg px-2.5 py-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#9e6f2c] shrink-0" />
+                <span className="font-semibold text-[#141b25]">₹30,000 / 24h</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/80 border border-[#e8dfd1] rounded-lg px-3 py-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#9e6f2c] shrink-0" />
-                <span className="font-semibold text-[#141b25]">Dining Area</span>
+              <div className="flex items-center gap-2 bg-white/80 border border-[#e8dfd1] rounded-lg px-2.5 py-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#9e6f2c] shrink-0" />
+                <span className="font-semibold text-[#141b25]">250–350 Guests</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/80 border border-[#e8dfd1] rounded-lg px-3 py-2.5">
-                <CheckCircle2 className="w-4 h-4 text-[#9e6f2c] shrink-0" />
-                <span className="font-semibold text-[#141b25]">Parking Facility</span>
+              <div className="flex items-center gap-2 bg-white/80 border border-[#e8dfd1] rounded-lg px-2.5 py-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#9e6f2c] shrink-0" />
+                <span className="font-semibold text-[#141b25]">Cooking Kitchen</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/80 border border-[#e8dfd1] rounded-lg px-2.5 py-2">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#9e6f2c] shrink-0" />
+                <span className="font-semibold text-[#141b25]">Parking Available</span>
               </div>
             </div>
 

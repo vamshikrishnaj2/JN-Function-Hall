@@ -35,10 +35,10 @@ export const AboutSection: React.FC = () => {
 
               <div className="border-t border-[#eee7dc] pt-5 text-xs text-[#52525b] leading-relaxed text-left space-y-2">
                 <p>
-                  <strong>Core Purpose:</strong> Serving families, organizations, and communities as a dedicated venue for cultural celebrations, marriages, and formal gatherings.
+                  <strong>Core Purpose:</strong> Serving families and communities as a dedicated venue for auspicious cultural celebrations, marriages, and formal gatherings.
                 </p>
                 <p>
-                  <strong>Venue Setup:</strong> Designed with an elevated stage area, open hall layout, separate dining hall, and vehicle parking facilities.
+                  <strong>Venue Specifications:</strong> 250–350 guest capacity, 24-hour venue timing, dedicated kitchen facility for cooking, elevated stage, dining hall, and on-site parking at ₹30,000 hall rental.
                 </p>
               </div>
 
@@ -76,8 +76,9 @@ export const AboutSection: React.FC = () => {
                 the venue offers a dignified and comfortable environment for hosts and their guests.
               </p>
               <p>
-                The premises feature an open-span main function hall with an elevated ceremonial stage,
-                an independent dining area for simultaneous food service, and convenient on-site vehicle parking.
+                The premises feature an open-span main function hall accommodating 250–350 guests, an elevated ceremonial stage,
+                a dedicated on-site kitchen facility available for cooking if required, an independent dining hall for meal service,
+                and convenient on-site vehicle parking for 24-hour event bookings.
                 Our administration works directly with event organizers and families to assist with date reservations,
                 hall inspection visits, and logistical venue coordination.
               </p>

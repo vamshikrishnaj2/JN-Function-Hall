@@ -9,6 +9,7 @@ import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { FacilitiesSection } from './components/FacilitiesSection';
 import { CapacitySection } from './components/CapacitySection';
+import { VenueConditionsSection } from './components/VenueConditionsSection';
 import { EventsSection } from './components/EventsSection';
 import { PricingSection } from './components/PricingSection';
 import { SisterBusinessSection } from './components/SisterBusinessSection';
@@ -40,10 +41,13 @@ export default function App() {
         {/* 4. FACILITIES (Verified Facilities Grid) */}
         <FacilitiesSection />
 
-        {/* 5. CAPACITY (Dedicated Capacity with verified information guidelines) */}
+        {/* 5. CAPACITY & VENUE HIGHLIGHTS (Verified Details: ₹30k, 24 Hours, 250-350 Capacity, Parking, Kitchen) */}
         <CapacitySection />
 
-        {/* 6. EVENTS (Suitable event categories with direct WhatsApp & Call) */}
+        {/* 6. VENUE CONDITIONS & RESTRICTIONS (Strictly enforced policies) */}
+        <VenueConditionsSection />
+
+        {/* 7. EVENTS (Suitable event categories with direct WhatsApp & Call) */}
         <EventsSection />
 
         {/* 7. PRICING & PACKAGES (Transparent Base Pricing ₹425, ₹550, ₹650 with direct Call & WhatsApp) */}
