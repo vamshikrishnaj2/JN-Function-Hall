@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Venue Configuration & Data for:
  * JN FUNCTION HALL
  * Jaya Narayana
@@ -49,14 +49,14 @@ export const VENUE_CONFIG = {
   name: 'JN FUNCTION HALL',
   entity: 'Jaya Narayana',
   headline: "Celebrate Life's Special Moments",
-  subheadline: 'JN Function Hall — Jaya Narayana',
+  subheadline: 'JN Function Hall â€” Jaya Narayana',
   
   // Verified Venue Core Details
-  hallPrice: '₹30,000',
+  hallPrice: 'â‚¹30,000',
   hallPriceNumeric: 30000,
   timing: '24 Hours',
-  capacity: '250–350 guests',
-  guestCapacityDisplay: '250–350',
+  capacity: '250â€“350 guests',
+  guestCapacityDisplay: '250â€“350',
   parking: 'Available',
   kitchen: 'Available for cooking if required',
 
@@ -117,7 +117,7 @@ export const VENUE_CONFIG = {
   mapsEmbedUrl: (typeof import.meta !== 'undefined' && import.meta.env?.VITE_VENUE_MAPS_EMBED_URL) || '',
 
   // Cross-link to separate catering business (strictly secondary cross-link)
-  balajiCateringUrl: (typeof import.meta !== 'undefined' && import.meta.env?.VITE_BALAJI_CATERING_URL) || 'https://balajicaterers.com',
+  balajiCateringUrl: (typeof import.meta !== 'undefined' && import.meta.env?.VITE_BALAJI_CATERING_URL) || 'https://sri-balaji-caterers.vercel.app',
   
   // Sree Balaji Caterers - Verified Social & Contact Config
   balajiCatering: {
@@ -220,7 +220,7 @@ export interface VenueDetailHighlight {
 export const VENUE_HIGHLIGHT_CARDS: VenueDetailHighlight[] = [
   {
     id: 'hall-price',
-    value: '₹30,000',
+    value: 'â‚¹30,000',
     label: 'Hall Price',
     subtext: 'Transparent hall rental rate for full 24-hour venue hire.',
     tag: 'Venue Rental',
@@ -234,7 +234,7 @@ export const VENUE_HIGHLIGHT_CARDS: VenueDetailHighlight[] = [
   },
   {
     id: 'guest-capacity',
-    value: '250–350',
+    value: '250â€“350',
     label: 'Guest Capacity',
     subtext: 'Comfortable seating & floating guest accommodations in main hall.',
     tag: 'Accommodations',
@@ -262,7 +262,7 @@ export const CAPACITY_DATA: CapacityItem[] = [
   {
     id: 'hall-capacity',
     title: 'Guest Capacity',
-    value: '250–350 Guests',
+    value: '250â€“350 Guests',
     subtext: 'Main function hall seating and floating guest capacity for weddings, receptions, and gatherings.',
     isPlaceholder: false,
   },
@@ -413,7 +413,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Main Hall',
     title: 'Main Celebration Hall & Stage View',
     description: 'Spacious high-ceiling auditorium interior showcasing the grand central stage and celebration seating.',
-    recommendedResolution: '1920 × 1080 px (16:9 Landscape)',
+    recommendedResolution: '1920 Ã— 1080 px (16:9 Landscape)',
     isPlaceholder: true,
   },
   {
@@ -421,7 +421,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Stage',
     title: 'Elevated Celebration Stage & Decor Area',
     description: 'Grand celebration dais equipped for wedding mandaps, reception backdrops, and floral decorations.',
-    recommendedResolution: '1920 × 1080 px (16:9 Landscape)',
+    recommendedResolution: '1920 Ã— 1080 px (16:9 Landscape)',
     isPlaceholder: true,
   },
   {
@@ -429,7 +429,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Main Hall',
     title: 'Hall Seating & Guest Perspective',
     description: 'Neatly organized banquet chair rows with spacious central aisle leading directly to the dais.',
-    recommendedResolution: '1920 × 1080 px (16:9 Landscape)',
+    recommendedResolution: '1920 Ã— 1080 px (16:9 Landscape)',
     isPlaceholder: true,
   },
   {
@@ -437,7 +437,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Event setup',
     title: 'Warm Ambient Lighting & Stage Perspective',
     description: 'Overhead illumination and festive spotlights creating an elegant celebratory ambiance.',
-    recommendedResolution: '1920 × 1080 px (16:9 Landscape)',
+    recommendedResolution: '1920 Ã— 1080 px (16:9 Landscape)',
     isPlaceholder: true,
   },
   {
@@ -445,7 +445,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Exterior',
     title: 'Foyer & Hall Entrance Pathway',
     description: 'Welcoming entrance foyer leading guests seamlessly into the main auditorium.',
-    recommendedResolution: '1920 × 1080 px (16:9 Landscape)',
+    recommendedResolution: '1920 Ã— 1080 px (16:9 Landscape)',
     isPlaceholder: true,
   },
   {
@@ -453,7 +453,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Dining Area',
     title: 'Spacious Dining Hall & Catering Section',
     description: 'Independent dining hall with hygienic flooring, ceiling fans, and dedicated catering services for wedding feasts and receptions.',
-    recommendedResolution: '1080 × 1920 px (Vertical)',
+    recommendedResolution: '1080 Ã— 1920 px (Vertical)',
     isPlaceholder: true,
   },
   {
@@ -461,7 +461,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Main Hall',
     title: 'Celebration Hall & Lift Facility',
     description: 'Main function hall featuring ornamental chandeliers, cushioned steel benches, and direct lift facility access.',
-    recommendedResolution: '1080 × 1920 px (Vertical)',
+    recommendedResolution: '1080 Ã— 1920 px (Vertical)',
     isPlaceholder: true,
   },
   {
@@ -469,7 +469,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Event setup',
     title: 'Dedicated Bride & Groom Dressing Rooms',
     description: 'Private changing and preparation rooms equipped with seating, windows, and dedicated amenities for the wedding party.',
-    recommendedResolution: '1080 × 1920 px (Vertical)',
+    recommendedResolution: '1080 Ã— 1920 px (Vertical)',
     isPlaceholder: true,
   },
   {
@@ -477,7 +477,7 @@ export const GALLERY_ITEMS: GalleryPlaceholderItem[] = [
     category: 'Parking',
     title: 'Guest Parking Area',
     description: 'Designated parking bays and vehicle movement driveway on premises.',
-    recommendedResolution: '1920 × 1080 px (16:9 Landscape)',
+    recommendedResolution: '1920 Ã— 1080 px (16:9 Landscape)',
     isPlaceholder: true,
   },
 ];
@@ -516,7 +516,7 @@ export interface CalculatedPackagePricing {
 }
 
 /**
- * Normal base package pricing: ₹425, ₹550, ₹650.
+ * Normal base package pricing: â‚¹425, â‚¹550, â‚¹650.
  * discountEnabled is currently false across all packages.
  */
 export const PRICING_PACKAGES: PricingPackageConfig[] = [
@@ -609,7 +609,7 @@ export function getCalculatedPricing(pkg: PricingPackageConfig): CalculatedPacka
     discountBadgeText = `${pkg.discountValue}% OFF`;
   } else if (pkg.discountType === 'fixed') {
     sellingPrice = Math.max(0, basePrice - pkg.discountValue);
-    discountBadgeText = `₹${pkg.discountValue} OFF`;
+    discountBadgeText = `â‚¹${pkg.discountValue} OFF`;
   }
 
   return {
@@ -620,3 +620,4 @@ export function getCalculatedPricing(pkg: PricingPackageConfig): CalculatedPacka
     offerLabel: pkg.offerLabel || 'Special Offer'
   };
 }
+
