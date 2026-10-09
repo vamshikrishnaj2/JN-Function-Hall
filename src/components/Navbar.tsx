@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Phone } from 'lucide-react';
 import { JNLogo } from './JNLogo';
@@ -7,6 +8,12 @@ import { WhatsAppIcon } from './WhatsAppIcon';
 interface NavbarProps {
   onOpenSisterModal?: () => void;
 }
+
+type NavLink = {
+  label: string;
+  href: string;
+  external?: boolean;
+};
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +32,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+  const navLinks: NavLink[] = [
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Facilities', href: '#facilities' },
@@ -33,7 +40,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
     { label: 'Conditions', href: '#conditions' },
     { label: 'Events', href: '#events' },
     { label: 'Pricing', href: '#pricing' },
-    { label: 'Catering', href: '#catering' },
+    {
+      label: 'Catering',
+      href: 'https://sri-balaji-caterers.vercel.app',
+      external: true,
+    },
     { label: 'Gallery', href: '#gallery' },
     { label: 'Location', href: '#location' },
     { label: 'Contact', href: '#contact' },
@@ -50,8 +61,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
-          
-          {/* Left: Official JN Function Hall Logo */}
           <a
             id="nav-brand-logo-link"
             href="#home"
@@ -61,13 +70,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
             <JNLogo variant="horizontal" size="md" theme="dark" />
           </a>
 
-          {/* Center / Desktop Navigation Links */}
+          {/* Desktop Navigation */}
           <nav id="desktop-nav" className="hidden xl:flex items-center space-x-7">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 id={`nav-link-${link.label.toLowerCase()}`}
                 href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
                 className="text-xs font-semibold uppercase tracking-wider text-[#4b5563] hover:text-[#141b25] transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#9e6f2c] after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
               >
                 {link.label}
@@ -75,16 +86,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
             ))}
           </nav>
 
-          {/* Right Actions: Subtle Cross-Link & Direct CALL NOW CTA */}
+          {/* Sister Business Link and Call Button */}
           <div className="hidden sm:flex items-center gap-3">
-            {/* Subtle Cross-link to separate Balaji Caterers business */}
             <button
               id="nav-subtle-balaji-link"
               onClick={() => {
                 if (onOpenSisterModal) {
                   onOpenSisterModal();
-                } else if (VENUE_CONFIG.balajiCateringUrl) {
-                  window.open(VENUE_CONFIG.balajiCateringUrl, '_blank', 'noopener,noreferrer');
+                } else {
+                  window.open(
+                    'https://sri-balaji-caterers.vercel.app',
+                    '_blank',
+                    'noopener,noreferrer'
+                  );
                 }
               }}
               className="text-xs text-[#6b7280] hover:text-[#9e6f2c] transition-colors flex items-center gap-1 font-medium px-2.5 py-1.5 rounded-md hover:bg-[#f3ede3] cursor-pointer"
@@ -94,7 +108,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
               <ArrowRight className="w-3 h-3 text-[#9e6f2c]" />
             </button>
 
-            {/* Primary Action: CALL NOW */}
             <a
               id="nav-call-now-btn"
               href={primaryPhoneTel}
@@ -105,7 +118,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
             </a>
           </div>
 
-          {/* Mobile Actions: Call Button & Hamburger */}
+          {/* Mobile Actions */}
           <div className="flex xl:hidden items-center gap-2">
             <a
               id="nav-mobile-call-btn"
@@ -115,6 +128,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
               <Phone className="w-3 h-3 text-[#dec9ab]" />
               <span>CALL</span>
             </a>
+
             <button
               id="nav-mobile-menu-btn"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -125,19 +139,23 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
-
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div id="mobile-nav-dropdown" className="xl:hidden bg-[#faf9f6] border-b border-[#e8dfd1] px-4 pt-2 pb-6 space-y-3">
+        <div
+          id="mobile-nav-dropdown"
+          className="xl:hidden bg-[#faf9f6] border-b border-[#e8dfd1] px-4 pt-2 pb-6 space-y-3"
+        >
           <nav className="flex flex-col space-y-2 pt-2">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 id={`mobile-nav-link-${link.label.toLowerCase()}`}
                 href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-sm font-semibold uppercase tracking-wider text-[#4b5563] hover:text-[#141b25] px-3 py-2 rounded-md hover:bg-[#f3ede3] transition-colors"
               >
