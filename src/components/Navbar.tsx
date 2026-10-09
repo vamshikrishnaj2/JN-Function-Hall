@@ -88,25 +88,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSisterModal }) => {
 
           {/* Sister Business Link and Call Button */}
           <div className="hidden sm:flex items-center gap-3">
-            <button
+            <a
               id="nav-subtle-balaji-link"
-              onClick={() => {
-                if (onOpenSisterModal) {
-                  onOpenSisterModal();
-                } else {
-                  window.open(
-                    'https://sri-balaji-caterers.vercel.app',
-                    '_blank',
-                    'noopener,noreferrer'
-                  );
-                }
-              }}
-              className="text-xs text-[#6b7280] hover:text-[#9e6f2c] transition-colors flex items-center gap-1 font-medium px-2.5 py-1.5 rounded-md hover:bg-[#f3ede3] cursor-pointer"
+              href="https://sri-balaji-caterers.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-[#6b7280] hover:text-[#9e6f2c] transition-colors flex items-center gap-1 font-medium px-2.5 py-1.5 rounded-md hover:bg-[#f3ede3]"
               title="Separate catering business: Sree Balaji Caterers"
             >
               <span>Balaji Caterers</span>
               <ArrowRight className="w-3 h-3 text-[#9e6f2c]" />
-            </button>
+            </a>
 
             <a
               id="nav-call-now-btn"
